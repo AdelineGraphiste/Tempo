@@ -14,21 +14,59 @@ Le dossier contient aussi **Désinstaller Tempo.exe** et le guide utilisateur. L
 
 ## Fonctionnalités
 
-- **Minuteur de travail et pauses programmées.** Choisis la durée de ta séance, le nombre de pauses et leur durée. Tempo affiche le temps restant et peut jouer une sonnerie au moment de s’arrêter ou de reprendre. C’est utile pour rester concentré sans oublier de souffler.
-- **Suivi de l’activité.** Le tableau de bord comptabilise le temps travaillé, les pauses et leur durée. Un graphique permet de relire la journée, puis de consulter les tendances de la semaine et du mois sans tenir un relevé à la main.
-- **Liste de tâches avec rappels.** Ajoute ce que tu dois faire aujourd’hui et associe une heure aux tâches importantes. Tempo te rappelle une réunion, un appel ou une échéance pendant que tu travailles.
-- **Agenda iCalendar.** Ajoute un calendrier compatible iCalendar pour retrouver tes rendez-vous dans l’application et recevoir un rappel lorsqu’un événement approche.
-- **Radio et musique.** Choisis un flux radio ou colle un lien YouTube dans l’onglet Musique. Le lecteur reste intégré à Tempo afin de garder ton environnement de travail au même endroit.
-- **Fenêtre adaptée au bureau.** Redimensionne Tempo, épingle la fenêtre au-dessus des autres applications ou passe en mode Mini pour ne garder que l’essentiel dans un coin de l’écran.
-- **Thèmes graphiques.** Change entièrement l’ambiance de la console avec les univers inclus. Les thèmes exportés au format `.tempo-theme` peuvent être conservés, partagés et importés plus tard.
+### Programmer une vraie séance de travail
+
+Indique la durée totale de la séance, le nombre de pauses et la durée de chaque pause. Tempo répartit le programme et lance un décompte visible en permanence. Une séance peut durer de 1 à 480 minutes et contenir jusqu’à 12 pauses.
+
+Pendant la séance, tu peux déclencher la prochaine pause, la terminer avec **Reprendre**, ajouter cinq minutes à la phase en cours ou arrêter complètement. Le temps réellement écoulé est alors ajouté à ton historique. C’est pratique pour réserver une heure à du code, une proposition commerciale ou une tâche de fond sans surveiller l’horloge du système.
+
+### Recevoir un rappel au bon moment
+
+Tempo sonne lorsqu’une phase de travail ou une pause se termine. Tu peux utiliser le carillon intégré, choisir ton propre fichier WAV ou passer l’application en silencieux.
+
+Le rappel continue de fonctionner lorsque la fenêtre est réduite ou en mode Mini, à condition que Tempo reste ouvert. Tu peux donc garder ton attention sur ton travail et laisser l’application surveiller le temps.
+
+### Voir le temps réellement travaillé
+
+Le tableau de bord affiche le temps de travail cumulé aujourd’hui, le nombre de pauses et leur durée totale. Le graphique de la journée distingue les périodes de travail et de pause sur une ligne de 24 heures.
+
+L’onglet **Activité** permet ensuite de consulter une journée, une semaine ou un mois et de revenir sur les périodes précédentes. Tu vois rapidement si ta journée a été morcelée, si tu as enchaîné une longue session ou si tu as pris les pauses prévues.
+
+### Garder les tâches du jour sous les yeux
+
+Ajoute une tâche ou un rendez-vous dans **À faire**, avec une heure facultative. Une saisie comme « Réunion à 8 h » peut aussi programmer automatiquement le rappel à 08:00. Les tâches peuvent être modifiées, cochées lorsqu’elles sont terminées ou supprimées.
+
+La prochaine tâche reste visible depuis la console principale. Les tâches non terminées restent disponibles le lendemain, ce qui évite de perdre une idée ou un rappel en fermant l’application.
+
+### Retrouver ses rendez-vous dans Tempo
+
+Connecte un calendrier avec un lien d’abonnement iCalendar ou `webcal`, ou importe un fichier `.ics`. Tempo affiche les prochains rendez-vous et relit un calendrier connecté toutes les dix minutes pendant son ouverture.
+
+Tu choisis quand être prévenu : à l’heure, 5, 10, 15 ou 30 minutes avant, ou une heure avant. Les rendez-vous avec une heure déclenchent une alerte, y compris lorsque Tempo est réduit. Les événements prévus sur une journée entière restent visibles sans déclencher de sonnerie.
+
+### Écouter de la musique sans quitter la console
+
+L’onglet **Musique** regroupe les stations de radio, leur volume et le bouton d’arrêt. Tu peux également coller le lien d’une vidéo ou d’une playlist YouTube : le lecteur s’ouvre directement dans Tempo et se met en pause lorsque tu quittes l’onglet Musique.
+
+Un lien Deezer ou Spotify s’ouvre dans le navigateur associé. Tu peux aussi sélectionner un fichier audio présent sur l’ordinateur. Les fonctions de radio et de streaming nécessitent une connexion Internet.
+
+### Garder Tempo à la bonne place
+
+La fenêtre se déplace et se redimensionne comme une petite console de bureau. Le bouton **Épingler** la maintient devant les autres applications. Le mode **Mini** réduit l’interface à l’horloge et au temps utile pour occuper peu de place dans un coin de l’écran.
+
+### Changer complètement d’univers graphique
+
+Les thèmes ne changent pas seulement une couleur : ils peuvent modifier la façade, les décors, la typographie et la disposition des informations. Tu peux choisir un univers fourni, ajuster sa palette, ajouter une illustration et enregistrer ta propre version.
+
+Chaque thème peut être exporté au format `.tempo-theme`, partagé puis importé sur un autre ordinateur. D’autres thèmes seront proposés prochainement au téléchargement.
+
+### Utiliser ses données sans créer de compte
+
+Tempo fonctionne directement sur Windows et n’exige aucun compte. Les réglages, les tâches et l’historique sont enregistrés dans `%LOCALAPPDATA%\TempoRadio` sur l’ordinateur. Les rappels fonctionnent tant que l’application reste ouverte. Seuls les radios, les services musicaux et les calendriers distants utilisent Internet.
 
 ## Pourquoi utiliser Tempo ?
 
-Tempo regroupe dans une seule petite application le minuteur, les pauses, les tâches, les rendez-vous et la musique. Tu gardes une vue claire sur ta journée sans multiplier les onglets pendant une session de travail.
-
-L’application fonctionne directement sur Windows, sans compte à créer. Tes réglages, tes tâches et ton historique restent enregistrés localement sur ton ordinateur. Tu peux donc t’en servir comme compagnon de bureau quotidien, puis le réduire dès que tu as seulement besoin de voir l’heure ou le temps restant.
-
-Les réglages et l’historique sont enregistrés dans %LOCALAPPDATA%\TempoRadio. Les rappels fonctionnent lorsque Tempo reste ouvert. Les radios, YouTube et les calendriers distants utilisent Internet.
+Tempo rassemble le minuteur, les pauses, les tâches, les rendez-vous, l’historique et la musique dans une seule fenêtre. Un fondateur ou un développeur peut lancer une session, garder son prochain appel visible et vérifier le temps consacré à son travail sans multiplier les outils pendant la journée.
 
 ## Exemples de thèmes
 
