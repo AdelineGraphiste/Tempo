@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+<Product Id="*" Name="Tempo" Codepage="65001" Language="1036" Version="1.0.1" Manufacturer="Adeline Courtois" UpgradeCode="B28C62A4-E15B-4573-9E14-258260D652AA">
+<Package InstallerVersion="500" Compressed="yes" InstallScope="perUser" Platform="x64" />
+<MajorUpgrade DowngradeErrorMessage="Une version plus recente de Tempo est deja installée." />
+<MediaTemplate EmbedCab="yes" />
+<Icon Id="TempoIcon" SourceFile="assets\tempo.ico" />
+<Property Id="ARPPRODUCTICON" Value="TempoIcon" />
+<Property Id="ARPURLINFOABOUT" Value="https://adelinecourtois.fr/" />
+<Directory Id="TARGETDIR" Name="SourceDir">
+<Directory Id="LocalAppDataFolder"><Directory Id="ProgramsDir" Name="Programs"><Directory Id="INSTALLFOLDER" Name="Tempo">
+<Component Id="App" Guid="*" Win64="yes">
+<RegistryValue Root="HKCU" Key="Software\AdelineCourtois\Tempo" Name="ProductCode" Type="string" Value="[ProductCode]" />
+<File Id="AppFile" Source="dist\Tempo.exe" KeyPath="yes" />
+</Component>
+<Component Id="Readme" Guid="*" Win64="yes"><File Source="dist\README.txt" KeyPath="yes" /></Component>
+</Directory></Directory></Directory>
+<Directory Id="DesktopFolder">
+<Component Id="DesktopShortcut" Guid="*" Win64="yes">
+<Shortcut Id="DesktopTempo" Name="Tempo" Target="[INSTALLFOLDER]Tempo.exe" WorkingDirectory="INSTALLFOLDER" Icon="TempoIcon" />
+<RegistryValue Root="HKCU" Key="Software\AdelineCourtois\Tempo" Name="DesktopShortcut" Type="integer" Value="1" KeyPath="yes" />
+</Component></Directory>
+<Directory Id="ProgramMenuFolder"><Directory Id="MenuDir" Name="Tempo">
+<Component Id="StartShortcut" Guid="*" Win64="yes"><Shortcut Id="StartTempo" Name="Tempo" Target="[INSTALLFOLDER]Tempo.exe" WorkingDirectory="INSTALLFOLDER" Icon="TempoIcon" /><RemoveFolder Id="MenuCleanup" On="uninstall" /><RegistryValue Root="HKCU" Key="Software\AdelineCourtois\Tempo" Name="StartShortcut" Type="integer" Value="1" KeyPath="yes" /></Component>
+</Directory></Directory>
+</Directory>
+<Feature Id="Main" Title="Tempo" Level="1"><ComponentRef Id="App"/><ComponentRef Id="Readme"/><ComponentRef Id="DesktopShortcut"/><ComponentRef Id="StartShortcut"/></Feature>
+</Product>
+</Wix>
+
+
+

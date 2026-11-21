@@ -1,0 +1,98 @@
+﻿#worldHero,#instruments,#miniArt{display:none}
+body:where([data-layout]:not([data-layout=""])){background:var(--surface);color:#eceee8;font-family:"Segoe UI",sans-serif}
+body:where([data-layout]:not([data-layout=""])) #shell{border-radius:4px;box-shadow:none;border:1px solid color-mix(in srgb,var(--tint) 50%,var(--surface))}
+body:where([data-layout]:not([data-layout=""])) .screw,body:where([data-layout]:not([data-layout=""])) #beams{display:none}
+body:where([data-layout]:not([data-layout=""])) header b{font-family:var(--worldFont);font-style:normal;color:var(--tint);text-shadow:none}
+body:where([data-layout]:not([data-layout=""])) button,body:where([data-layout]:not([data-layout=""])) .card,body:where([data-layout]:not([data-layout=""])) .strip{background:var(--surface);color:#eff2eb;border:1px solid color-mix(in srgb,var(--surface) 72%,var(--tint));border-radius:2px;box-shadow:none}
+body:where([data-layout]:not([data-layout=""])) nav{background:var(--surface);gap:3px}
+body:where([data-layout]:not([data-layout=""])) nav button.on,body:where([data-layout]:not([data-layout=""])) .keypad button:first-child{background:var(--tint);color:#151615;border-color:var(--tint)}
+body:where([data-layout]:not([data-layout=""])) .keypad button{border-bottom-width:2px}
+body:where([data-layout]:not([data-layout=""])) .card h2,body:where([data-layout]:not([data-layout=""])) .card h3{font-family:var(--worldFont)}
+body:where([data-layout]:not([data-layout=""])) #console.active{display:grid;gap:8px;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:"hero hero" "inst inst" "keys keys" "plot plot" "radio task"}
+body:where([data-layout]:not([data-layout=""])) #worldHero{display:flex;grid-area:hero;min-height:185px;align-items:center;position:relative;overflow:hidden;isolation:isolate;border:1px solid color-mix(in srgb,var(--surface) 50%,var(--tint));background:var(--surface)}
+#worldHero canvas,#miniArt{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+.readout{padding:16px 25px;display:grid;align-content:center;gap:3px;color:var(--heroInk);text-shadow:0 2px 10px #0009}
+.worldTitle{font:700 15px var(--worldFont);color:var(--tint);letter-spacing:.09em}
+.worldLabel,.worldDetail,#instruments small{font:600 10px/1.25 Consolas,monospace;letter-spacing:.10em;color:#d8e1d8}
+.worldLabel{margin-top:9px}.worldTime{font:600 clamp(32px,8vw,64px)/.98 var(--worldFont);letter-spacing:-.055em;font-variant-numeric:tabular-nums}
+body:where([data-layout]:not([data-layout=""])) #instruments{display:flex;grid-area:inst;background:var(--surface);border:1px solid color-mix(in srgb,var(--surface) 70%,var(--tint));gap:0}
+#instruments>div{flex:1;min-width:0;display:grid;align-content:center;gap:4px;padding:10px 8px;border-left:2px solid var(--case)}
+#instruments b{font:600 clamp(14px,2.8vw,20px) var(--worldFont);color:var(--tint);font-variant-numeric:tabular-nums}
+#console .keypad{grid-area:keys}#console>.card{grid-area:plot}#console>.strip{grid-area:radio}#taskPeek{grid-area:task}
+body:where([data-layout]:not([data-layout=""])) #console> :is(.card,.keypad,.taskpeek,.strip){margin:0;min-width:0}
+body:where([data-layout]:not([data-layout=""])) .taskpeek{display:grid;align-content:center;justify-content:stretch;padding:6px 10px}
+body:where([data-layout]:not([data-layout=""])) .strip{gap:3px;flex-wrap:wrap}
+body:where([data-layout]:not([data-layout=""])) #console .strip b{font-size:12px}
+body:where([data-layout]:not([data-layout=""])) #console .strip button{font:11px Consolas;padding:4px 6px}
+body:where([data-layout]:not([data-layout=""])) footer{color:#e5e6d9}
+body:where([data-layout]:not([data-layout=""])).art #worldHero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#000a,#0003),var(--illustration) center/cover;z-index:-1}
+body:where([data-layout]:not([data-layout=""])).art #worldHero canvas{opacity:.22}
+/* The terminal uses a persistent command rail. Cinema unfolds around a centered title. */
+body[data-layout=terminal]:not(.mini) #shell,body[data-layout=telemetry]:not(.mini) #shell{display:grid;grid-template-columns:96px minmax(0,1fr);grid-template-rows:auto 1fr auto;gap:6px}
+body[data-layout=terminal]:not(.mini) :is(header,footer),body[data-layout=telemetry]:not(.mini) :is(header,footer){grid-column:1/-1}
+body[data-layout=terminal]:not(.mini) nav,body[data-layout=telemetry]:not(.mini) nav{flex-direction:column;margin:0;align-items:stretch;padding:4px;justify-content:flex-start}
+body[data-layout=terminal]:not(.mini) nav button,body[data-layout=telemetry]:not(.mini) nav button{flex:0;text-align:left;padding:9px 4px;font:12px Consolas}
+body[data-layout=terminal] nav button:before{content:"> ";color:inherit}
+body[data-layout=terminal] #worldHero .worldTitle{font-size:28px;text-transform:uppercase;letter-spacing:.2em;color:#bcffd4}
+body[data-layout=terminal] #worldHero .readout{background:linear-gradient(90deg,#010b04e6,#010b0460,transparent);width:80%}
+body[data-layout=terminal] .worldTime:after{content:"_";font-size:.46em}
+body[data-layout=terminal] #console.active{grid-template-areas:"hero hero" "keys keys" "inst inst" "plot plot" "task radio"}
+body[data-layout=cinema] #console.active{grid-template-areas:"hero hero" "keys keys" "radio radio" "inst inst" "plot task"}
+body[data-layout=cinema] #worldHero{justify-content:center;text-align:center;min-height:220px;border-color:#853c44}
+body[data-layout=cinema] .readout{padding:14px 8px 22px}
+body[data-layout=cinema] .worldTitle{font:bold clamp(26px,5.4vw,41px)/.94 Georgia,serif;text-transform:uppercase;letter-spacing:-.055em;color:#240d14;-webkit-text-stroke:1px var(--tint);text-shadow:0 0 10px #da352b88;border-block:2px solid var(--tint);padding:2px 7px 4px}
+body[data-layout=cinema] .worldTime{font-weight:400;letter-spacing:-.045em;color:#ffdec4}body[data-layout=cinema] .strip{justify-content:center;gap:12px}body[data-layout=cinema] header b{letter-spacing:.10em}
+body[data-layout=cinema] .card{border-width:1px 0;background:linear-gradient(120deg,var(--surface),color-mix(in srgb,var(--case) 55%,var(--surface)))}
+body[data-layout=cinema] nav button{font-family:Georgia,serif}body[data-layout=cinema] #console .card .title{flex-wrap:wrap}
+body[data-layout=panels] #console.active{grid-template-columns:1.5fr 1fr;grid-template-areas:"hero inst" "keys keys" "plot plot" "task radio"}
+body[data-layout=panels] #worldHero{min-height:205px;border:4px solid #131313}body[data-layout=panels] #instruments{flex-direction:column;border:3px solid #101010}body[data-layout=panels] .readout{color:#191922;text-shadow:2px 2px #fff}body[data-layout=panels] .readout :is(.worldLabel,.worldDetail,.worldTitle){color:#212128}body[data-layout=panels] .worldTitle{transform:rotate(-5deg);font-style:italic;background:#ffe04b;align-self:start;padding:3px;justify-self:start}body[data-layout=panels] #shell{border:3px solid #17171c}body[data-layout=panels] .card{box-shadow:3px 3px #141418}
+body[data-layout=horizon] #console.active{grid-template-areas:"hero hero" "radio keys" "inst inst" "task plot"}body[data-layout=horizon] #worldHero{align-items:flex-end;min-height:200px}body[data-layout=horizon] .worldTitle{font-style:italic;font-size:25px}body[data-layout=horizon] .readout{background:linear-gradient(90deg,#321341a1,transparent)}
+body[data-layout=cockpit] #console.active{grid-template-columns:1fr 1.75fr;grid-template-areas:"inst hero" "keys keys" "radio plot" "task plot"}body[data-layout=cockpit] #instruments{flex-direction:column}body[data-layout=cockpit] #worldHero{border-radius:32px 6px 32px 6px}body[data-layout=cockpit] .worldTime{font-weight:300}body[data-layout=cockpit] .worldTitle{text-transform:uppercase}
+body[data-layout=cabinet] #console.active{grid-template-areas:"hero hero" "keys keys" "plot inst" "radio task"}body[data-layout=cabinet] #instruments{display:grid;grid-template-columns:1fr 1fr}body[data-layout=cabinet] #instruments>div:first-child{grid-column:1/-1}body[data-layout=cabinet] #worldHero{border:6px ridge #71618d}.worldTitle{line-height:1.1}body[data-layout=cabinet] .worldTitle{text-transform:uppercase;letter-spacing:.12em;text-shadow:3px 3px #af257e}
+body[data-layout=telemetry] #console.active{grid-template-areas:"hero hero" "inst inst" "plot keys" "radio task"}body[data-layout=telemetry] .keypad{display:grid;grid-template-columns:1fr 1fr}body[data-layout=telemetry] .worldTitle{font-style:italic;letter-spacing:.15em}body[data-layout=telemetry] #worldHero{border-left:6px solid var(--tint)}
+body[data-layout=paper] #console.active{grid-template-areas:"hero hero" "task keys" "inst inst" "plot radio"}body[data-layout=paper] .readout{padding-left:8%}body[data-layout=paper] #worldHero{border-radius:2px 35px 2px 35px}body[data-layout=paper] .worldTitle{font-weight:400;font-style:italic;font-size:22px}body[data-layout=paper] nav button{font-family:Georgia,serif}
+body[data-layout=scope] #console.active{grid-template-columns:1.9fr 1fr;grid-template-areas:"hero keys" "inst inst" "radio radio" "plot task"}body[data-layout=scope] .keypad{flex-direction:column}body[data-layout=scope] .keypad button{width:100%}body[data-layout=scope] #worldHero{border-radius:18px}body[data-layout=scope] .worldTitle{letter-spacing:.18em;text-transform:uppercase}
+body:where([data-layout]:not([data-layout=""])).mini #shell{isolation:isolate;background:var(--surface)}
+body:where([data-layout]:not([data-layout=""])).mini #miniArt{display:block}
+body:where([data-layout]:not([data-layout=""])).mini #miniTime{background:transparent;text-shadow:0 1px #111;font:600 clamp(26px,12vw,54px)/1 var(--worldFont);color:var(--d1);letter-spacing:-.04em}
+body[data-layout=terminal].mini #miniTime{text-align:left;justify-content:flex-start;padding-left:12px}
+body[data-layout=cinema].mini #miniTime{color:#ffdfc5!important}
+body[data-layout=panels].mini #miniTime{color:#17171a!important}
+@media(max-width:540px){
+body[data-layout=terminal]:not(.mini) #shell,body[data-layout=telemetry]:not(.mini) #shell{grid-template-columns:76px minmax(0,1fr)}
+body[data-layout=terminal]:not(.mini) nav button{font-size:10px}
+body:where([data-layout]:not([data-layout=""])) .keypad{flex-wrap:wrap}
+body:where([data-layout]:not([data-layout=""])) .keypad button{min-width:47px}
+body:where([data-layout]:not([data-layout=""])) #console .card .title{flex-wrap:wrap}
+.readout{padding:14px 10px}#instruments>div{padding:7px 4px}#instruments small{font-size:8px}
+body[data-layout=horizon] #console.active,body[data-layout=paper] #console.active{grid-template-areas:"hero hero" "keys keys" "inst inst" "radio task" "plot plot"}
+}
+
+body[data-layout]:not([data-layout=""]) #tabs button.on{background:var(--tint);color:#101512;box-shadow:none}
+body[data-layout]:not([data-layout=""]) #console .keypad button:disabled{background:var(--surface);color:#a5a9a2;opacity:.8}
+.swatch.scenePreview{position:relative;isolation:isolate}.scenePreview canvas{position:absolute;inset:0;width:100%;height:100%;z-index:-1}.scenePreview strong{background:#111917c9;color:var(--d1)}
+/* The sonar chassis is a bathymetric chart, outside as well as inside the display. */
+body[data-skin=sonar]:not(.art) #shell{background-color:#092933;background-image:repeating-radial-gradient(ellipse at 105% 72%,transparent 0 13px,#477f872e 14px 15px,transparent 16px 30px),linear-gradient(120deg,#143943,#081f2c);background-size:auto;border:3px ridge #427981}
+body[data-skin=sonar] header{border-bottom:1px solid #548994}body[data-skin=sonar] nav button{border-radius:10px}
+body[data-layout=panels] #console.active{grid-template-columns:minmax(0,1.8fr) minmax(110px,1fr);grid-template-areas:"hero hero" "keys inst" "plot inst" "radio task"}
+body[data-layout=panels] #worldHero{min-height:182px;border:4px solid #16151d}body[data-layout=panels] .readout{margin-left:3%;padding:10px 16px;transform:rotate(-2deg);background:#fff9eaeb;border:3px solid #16151c;box-shadow:5px 5px #24232d}
+body[data-layout=panels] #instruments{color:#15151b;background:#f5efdb;border:3px solid #17171e}body[data-layout=panels] #instruments :is(small,b){color:#24212b}body[data-layout=panels] .keypad{display:grid;grid-template-columns:1fr 1fr}
+body[data-layout=bridge] #console.active{grid-template-areas:"hero hero" "keys inst" "radio inst" "plot task"}body[data-layout=bridge] #instruments{flex-direction:column}body[data-layout=bridge] .keypad{display:grid;grid-template-columns:1fr 1fr}
+body[data-layout=toon] #console.active{grid-template-areas:"hero hero" "inst inst" "plot keys" "task radio"}body[data-layout=toon] .keypad{display:grid;grid-template-columns:1fr 1fr}
+body[data-layout=field] #console.active{grid-template-areas:"hero hero" "inst radio" "keys keys" "plot task"}body[data-layout=field] #instruments{flex-wrap:wrap}
+body[data-layout=roadbook] #console.active{grid-template-areas:"hero hero" "task radio" "keys keys" "plot inst"}
+body[data-layout=periodic] #console.active{grid-template-areas:"hero hero" "inst inst" "task plot" "keys radio"}
+body[data-layout=boulevard] #console.active{grid-template-areas:"hero hero" "radio radio" "keys inst" "task plot"}
+body:is([data-layout=bridge],[data-layout=toon],[data-layout=field],[data-layout=roadbook],[data-layout=periodic],[data-layout=boulevard]) .readout{max-width:62%;padding:14px 20px;background:linear-gradient(90deg,#141722dc,#14172269 70%,transparent);align-self:stretch}
+body[data-layout=bridge] .worldTitle{font:900 clamp(20px,4vw,32px)/1 Arial;letter-spacing:.06em;color:#181a22;-webkit-text-stroke:1px #ffdc74;text-transform:uppercase}
+body[data-layout=toon] .worldTitle{color:#ffe22e;font:bold italic clamp(22px,4vw,34px)/1 "Trebuchet MS";text-shadow:2px 2px 0 #192734}
+body[data-layout=toon] #worldHero,body[data-layout=toon] .card{border:3px solid #1b2634;border-radius:14px}body[data-layout=toon]:not(.art) #shell{background:linear-gradient(#48a7dd,#95d6eb 62%,#a3cd66)}
+body[data-layout=field] .worldTitle,body[data-layout=roadbook] .worldTitle{font:900 condensed clamp(20px,4vw,30px)/1 Impact,sans-serif;text-transform:uppercase;letter-spacing:-.02em}
+body[data-layout=field]:not(.art) #shell{background:repeating-linear-gradient(157deg,#a8b99815 0 1px,transparent 2px 10px),linear-gradient(120deg,#384b3b,#192821)}
+body[data-layout=roadbook]:not(.art) #shell{background:repeating-linear-gradient(0deg,#e0c6a512 0 1px,transparent 1px 5px),#4d463b}
+body[data-layout=periodic] #instruments>div{border:2px solid var(--tint);margin:3px}body[data-layout=periodic] .worldTitle{border:1px solid #c8e3b8;align-self:start;justify-self:start;padding:4px 8px}
+body[data-layout=boulevard]:not(.art) #shell{background:linear-gradient(148deg,#62416b,#342c50 48%,#214b59)}body[data-layout=boulevard] .worldTitle{font:bold italic 28px/1 "Trebuchet MS";color:#ffbfe1;text-shadow:2px 3px #772c72}body[data-layout=boulevard] .keypad{display:grid;grid-template-columns:1fr 1fr}
+#ytDock{flex:none;max-height:46%;overflow:auto;background:#111;color:#fff;padding:3px 5px}#ytDock[hidden]{display:none}#ytDock header{min-height:20px;font:12px Consolas;cursor:default;justify-content:space-between}#ytDock iframe{width:100%;height:clamp(200px,34vh,300px);display:block;border:0}#ytClose{padding:2px 8px}body.mini #ytDock{display:none}
+body:is([data-layout=panels],[data-layout=boulevard],[data-layout=telemetry]) .worldTime{font-family:"Segoe UI",sans-serif;font-weight:650;letter-spacing:-.035em}
+body:is([data-layout=panels],[data-layout=boulevard],[data-layout=telemetry]) #instruments b{font-family:Consolas,monospace;font-weight:600}
+body[data-layout=panels] footer{background:#24232a;color:#faf4df;padding:3px 5px}

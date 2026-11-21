@@ -1,0 +1,8 @@
+.deps/
+build/
+dist/
+*.user
+*.suo
+.vs/
+Thumbs.db
+Desktop.ini

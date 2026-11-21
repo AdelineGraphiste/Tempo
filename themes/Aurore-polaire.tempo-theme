@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "name": "Aurore polaire",
+  "style": "orbit",
+  "shell": "#23334e",
+  "panel": "#131d31",
+  "accent": "#81e2c3",
+  "clock": "#acefff",
+  "timer": "#98ffc4",
+  "summary": "#dfaaff"
+}

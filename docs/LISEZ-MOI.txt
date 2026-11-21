@@ -1,0 +1,67 @@
+﻿TEMPO
+Guide de démarrage · Windows 64 bits
+
+J’ai créé Tempo pour les journées où tu te plonges dans le code et où
+tu oublies de lever le nez. Pose la petite console dans un coin de ton
+écran, choisis une station et règle ta première séance.
+
+DÉMARRER
+
+1. Dans Windows, fais un clic droit sur le ZIP et choisis « Extraire tout ».
+2. Double-clique sur « Installer Tempo.msi » dans le dossier extrait.
+   Une fois l’installation terminée, ouvre « Tempo » sur ton bureau.
+3. Dans « Réglages », choisis la durée totale, le nombre de pauses et leur
+   durée. Par exemple, une heure avec deux pauses de cinq minutes te laisse
+   cinquante minutes de travail. Reviens dans « Console » et clique sur
+   « Démarrer ».
+
+L’installation est réservée à ton compte Windows. Tu peux désinstaller
+Tempo en ouvrant « Désinstaller Tempo.exe » dans ce dossier. Windows te demande de confirmer la désinstallation.  L’interface utilise
+Microsoft Edge WebView2 Runtime. Si Windows indique que ce composant manque,
+tu peux le télécharger sur https://developer.microsoft.com/microsoft-edge/webview2/
+
+AU QUOTIDIEN
+
+• « Mini » affiche l’horloge seule. « Épingler » la garde au premier plan.
+  Déplace la console par sa barre du haut ou tire le coin inférieur droit
+  pour changer sa taille.
+• « À faire » accueille tes tâches. Saisis « Réunion à 8 h » pour préparer
+  un rappel à 08:00. Vérifie l’heure affichée avant de cliquer sur « Ajouter ».
+  Garde Tempo ouvert pour recevoir les rappels.
+• « Agenda » accepte un fichier .ics ou un lien d’abonnement iCalendar.
+• « Musique » permet de choisir une radio ou de lire un lien YouTube.
+  Quitter cet onglet masque la vidéo et la met en pause. Reviens dans
+  « Musique » et appuie sur Lecture pour reprendre. La radio peut continuer
+  à jouer pendant que tu utilises la console.
+• « Activité » récapitule ton travail et tes pauses par jour, semaine ou mois.
+• « Thèmes » change le décor et la disposition. Pour ajouter un thème reçu
+  plus tard, clique sur « Importer » et choisis le fichier .tempo-theme.
+
+Tes listes, tes séances et tes réglages sont conservés sur cet ordinateur,
+dans %LOCALAPPDATA%\TempoRadio. Pour passer à une nouvelle version, ferme
+l’ancienne application avant de lancer le nouvel installateur.
+
+À PROPOS
+
+Je suis Adeline Courtois, graphiste freelance à Lille. Je crée des logos
+minimalistes et des identités visuelles pour les fondateurs de SaaS B2B.
+Je travaille à distance partout en France.
+
+Mon site et mon portfolio     https://adelinecourtois.fr/
+Mon profil LinkedIn           https://fr.linkedin.com/in/adelinecourtois
+Pour m’écrire                 contact@adelinecourtois.fr
+
+UTILISATION ET PARTAGE
+
+Tempo est une ressource gratuite. Tu peux l’utiliser pour tes activités
+personnelles et professionnelles. La revente de l’application est interdite,
+seule ou incluse dans un lot, un abonnement ou une offre payante.
+Pour une diffusion commerciale, contacte-moi afin d’obtenir mon accord écrit.
+
+Tu peux partager gratuitement les thèmes que tu crées avec tes propres
+illustrations. Les marques et univers évoqués appartiennent à leurs
+titulaires respectifs. Tempo est une création indépendante.
+
+© 2026 Adeline Courtois pour ses créations originales.
+Les composants tiers conservent leurs licences respectives.
+
