@@ -1,4 +1,4 @@
-﻿# Tempo
+# Tempo
 
 Une console de bureau pour organiser ses séances de travail, prendre des pauses et suivre son activité.
 
@@ -14,12 +14,19 @@ Le dossier contient aussi **Désinstaller Tempo.exe** et le guide utilisateur. L
 
 ## Fonctionnalités
 
-- Séances à rebours, pauses programmées et sonneries.
-- Liste de tâches avec rappels horaires et agenda iCalendar.
-- Historique quotidien, hebdomadaire et mensuel.
-- Radio et lecteur YouTube dans l’onglet Musique.
-- Mode Mini, fenêtre redimensionnable et épinglée.
-- Univers graphiques et thèmes personnalisés importables.
+- **Minuteur de travail et pauses programmées.** Choisis la durée de ta séance, le nombre de pauses et leur durée. Tempo affiche le temps restant et peut jouer une sonnerie au moment de s’arrêter ou de reprendre. C’est utile pour rester concentré sans oublier de souffler.
+- **Suivi de l’activité.** Le tableau de bord comptabilise le temps travaillé, les pauses et leur durée. Un graphique permet de relire la journée, puis de consulter les tendances de la semaine et du mois sans tenir un relevé à la main.
+- **Liste de tâches avec rappels.** Ajoute ce que tu dois faire aujourd’hui et associe une heure aux tâches importantes. Tempo te rappelle une réunion, un appel ou une échéance pendant que tu travailles.
+- **Agenda iCalendar.** Ajoute un calendrier compatible iCalendar pour retrouver tes rendez-vous dans l’application et recevoir un rappel lorsqu’un événement approche.
+- **Radio et musique.** Choisis un flux radio ou colle un lien YouTube dans l’onglet Musique. Le lecteur reste intégré à Tempo afin de garder ton environnement de travail au même endroit.
+- **Fenêtre adaptée au bureau.** Redimensionne Tempo, épingle la fenêtre au-dessus des autres applications ou passe en mode Mini pour ne garder que l’essentiel dans un coin de l’écran.
+- **Thèmes graphiques.** Change entièrement l’ambiance de la console avec les univers inclus. Les thèmes exportés au format `.tempo-theme` peuvent être conservés, partagés et importés plus tard.
+
+## Pourquoi utiliser Tempo ?
+
+Tempo regroupe dans une seule petite application le minuteur, les pauses, les tâches, les rendez-vous et la musique. Tu gardes une vue claire sur ta journée sans multiplier les onglets pendant une session de travail.
+
+L’application fonctionne directement sur Windows, sans compte à créer. Tes réglages, tes tâches et ton historique restent enregistrés localement sur ton ordinateur. Tu peux donc t’en servir comme compagnon de bureau quotidien, puis le réduire dès que tu as seulement besoin de voir l’heure ou le temps restant.
 
 Les réglages et l’historique sont enregistrés dans %LOCALAPPDATA%\TempoRadio. Les rappels fonctionnent lorsque Tempo reste ouvert. Les radios, YouTube et les calendriers distants utilisent Internet.
 
@@ -70,3 +77,4 @@ Dans Thèmes, sélectionne un univers, ajuste ses couleurs et ajoute éventuelle
 Tempo est une ressource gratuite. Sa revente, seule ou dans un lot, un abonnement ou une offre payante, nécessite l’accord écrit d’Adeline Courtois. Consulte [les conditions](LICENSE.txt) et [les notices des composants tiers](THIRD-PARTY-NOTICES.md).
 
 Les noms et univers évoqués appartiennent à leurs titulaires respectifs. Tempo est une création indépendante.
+
