@@ -24,3 +24,6 @@ Compare l’empreinte SHA-256 du ZIP avec le fichier `Tempo-Windows-x64-1.0.2.sh
     a74e5545feb18ccce2f470d055888ddb720fe092fc7453ad0049b197fb2c0faa  Tempo-Windows-x64-1.0.2.zip
 
 Tempo 1.0.2 n’est pas signé numériquement. Windows peut afficher SmartScreen ou « Éditeur inconnu ». Télécharge l’application uniquement depuis la Release GitHub officielle et vérifie son empreinte avant l’installation.
+
+La mise à jour depuis Tempo 1.0.1 a été vérifiée sur Windows 11 x64. Windows 10 x64 n’était pas disponible dans l’environnement de test actuel et reste à confirmer sur une machine Windows 10 propre.
+
