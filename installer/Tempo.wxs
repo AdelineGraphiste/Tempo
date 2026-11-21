@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-<Product Id="*" Name="Tempo" Codepage="65001" Language="1036" Version="1.0.1" Manufacturer="Adeline Courtois" UpgradeCode="B28C62A4-E15B-4573-9E14-258260D652AA">
+<Product Id="*" Name="Tempo" Codepage="65001" Language="1036" Version="1.0.2" Manufacturer="Adeline Courtois" UpgradeCode="B28C62A4-E15B-4573-9E14-258260D652AA">
 <Package InstallerVersion="500" Compressed="yes" InstallScope="perUser" Platform="x64" />
 <MajorUpgrade DowngradeErrorMessage="Une version plus recente de Tempo est deja installée." />
 <MediaTemplate EmbedCab="yes" />

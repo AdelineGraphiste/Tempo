@@ -1,6 +1,16 @@
-# Tempo
+﻿# Tempo
 
 Une console de bureau pour organiser ses séances de travail, prendre des pauses et suivre son activité.
+
+## Télécharger Tempo pour Windows
+
+[**Télécharger Tempo 1.0.2 pour Windows x64**](https://github.com/AdelineGraphiste/Tempo/releases/download/v1.0.2/Tempo-Windows-x64-1.0.2.zip)
+
+Le ZIP contient **Installer Tempo.msi**, **Désinstaller Tempo.exe** et **README.txt**. L’empreinte SHA-256 officielle est publiée avec la Release dans le fichier `Tempo-Windows-x64-1.0.2.sha256`.
+
+    a74e5545feb18ccce2f470d055888ddb720fe092fc7453ad0049b197fb2c0faa  Tempo-Windows-x64-1.0.2.zip
+
+Tempo 1.0.2 n’est pas signé numériquement. Windows peut afficher SmartScreen ou la mention « Éditeur inconnu ». Vérifie que le fichier provient de la [Release officielle](https://github.com/AdelineGraphiste/Tempo/releases/tag/v1.0.2) et compare son empreinte SHA-256 avant de l’exécuter.
 
 Créée par **Adeline Courtois**, graphiste freelance à Lille, spécialisée en logos minimalistes et identités visuelles pour les SaaS B2B.
 
@@ -8,9 +18,9 @@ Créée par **Adeline Courtois**, graphiste freelance à Lille, spécialisée en
 
 ## Installer
 
-Télécharge [Tempo pour Windows 64 bits](release/Tempo-Windows.zip), extrais le ZIP et lance **Installer Tempo.msi**. Un raccourci Tempo apparaît sur ton bureau.
+Télécharge la Release Windows, extrais entièrement le ZIP et lance **Installer Tempo.msi**. Un raccourci Tempo apparaît sur le bureau et dans le menu Démarrer.
 
-Le dossier contient aussi **Désinstaller Tempo.exe** et le guide utilisateur. L’application nécessite Microsoft Edge WebView2 Runtime.
+L’application nécessite Microsoft Edge WebView2 Runtime. S’il manque, Tempo affiche un message et Microsoft propose son téléchargement sur la [page officielle WebView2](https://developer.microsoft.com/microsoft-edge/webview2/).
 
 ## Fonctionnalités
 
@@ -64,6 +74,10 @@ Chaque thème peut être exporté au format `.tempo-theme`, partagé puis import
 
 Tempo fonctionne directement sur Windows et n’exige aucun compte. Les réglages, les tâches et l’historique sont enregistrés dans `%LOCALAPPDATA%\TempoRadio` sur l’ordinateur. Les rappels fonctionnent tant que l’application reste ouverte. Seuls les radios, les services musicaux et les calendriers distants utilisent Internet.
 
+## Confidentialité
+
+Tempo n’envoie pas les tâches, l’historique, les thèmes ou les réglages vers un serveur Tempo. Ces données restent dans `%LOCALAPPDATA%\TempoRadio`. Lorsque tu ajoutes une radio, un lien musical ou un calendrier distant, l’application contacte uniquement le service correspondant pour lire le contenu demandé.
+
 ## Pourquoi utiliser Tempo ?
 
 Tempo rassemble le minuteur, les pauses, les tâches, les rendez-vous, l’historique et la musique dans une seule fenêtre. Un fondateur ou un développeur peut lancer une session, garder son prochain appel visible et vérifier le temps consacré à son travail sans multiplier les outils pendant la journée.
@@ -92,7 +106,7 @@ Sur Windows 64 bits, avec PowerShell 5.1 ou ultérieur et .NET Framework 4.8, la
 
 Le script restaure les versions figées de NAudio, WebView2 et WiX, contrôle les archives par SHA-256, puis construit l’application, le MSI et le désinstalleur. La distribution apparaît dans dist/Tempo-Windows.zip.
 
-Pour une nouvelle version, augmente Product/@Version dans installer/Tempo.wxs. Conserve UpgradeCode pour permettre les mises à niveau.
+Pour une nouvelle version, mets à jour `src/AssemblyInfo.cs`, la variable `$version` dans `scripts/build.ps1` et `Product/@Version` dans `installer/Tempo.wxs`. Conserve `UpgradeCode` pour permettre les mises à niveau.
 
 ## Organisation du projet
 
@@ -112,7 +126,6 @@ Dans Thèmes, sélectionne un univers, ajuste ses couleurs et ajoute éventuelle
 
 ## Utilisation
 
-Tempo est une ressource gratuite. Sa revente, seule ou dans un lot, un abonnement ou une offre payante, nécessite l’accord écrit d’Adeline Courtois. Consulte [les conditions](LICENSE.txt) et [les notices des composants tiers](THIRD-PARTY-NOTICES.md).
+Tempo est une ressource gratuite pour un usage personnel ou professionnel. Sa revente, sa distribution payante et son intégration dans un lot, un abonnement ou une offre payante nécessitent l’accord écrit d’Adeline Courtois. Le code peut être consulté, compilé et modifié pour un usage interne, mais la redistribution publique d’une version modifiée nécessite également un accord écrit. Tempo n’est pas présenté comme un logiciel open source. Consulte [les conditions](LICENSE.txt) et [les notices des composants tiers](THIRD-PARTY-NOTICES.md).
 
 Les noms et univers évoqués appartiennent à leurs titulaires respectifs. Tempo est une création indépendante.
-

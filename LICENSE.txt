@@ -5,5 +5,9 @@ La redistribution gratuite de la distribution originale est autorisée avec ses 
 La revente, la distribution payante et l’intégration de Tempo dans une offre, un lot ou un abonnement payant nécessitent l’accord écrit préalable d’Adeline Courtois.
 Pour toute autre autorisation, contacter contact@adelinecourtois.fr.
 
+Le code source peut être consulté, compilé et modifié pour un usage personnel ou professionnel interne. La redistribution publique d’une version modifiée du code source ou de l’application nécessite l’accord écrit préalable d’Adeline Courtois. Cette licence n’est pas une licence open source au sens de l’Open Source Initiative.
+
+Les mentions de copyright, la présente licence et les notices des composants tiers doivent rester jointes à toute copie autorisée. Aucun droit sur le nom Tempo, l’identité visuelle d’Adeline Courtois ou les univers de marques tierces n’est accordé au-delà de l’utilisation de l’application.
+
 Les composants tiers restent soumis à leurs propres licences, qui prévalent pour ces composants.
 Les noms, marques et univers évoqués restent la propriété de leurs titulaires respectifs.

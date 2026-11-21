@@ -1,5 +1,5 @@
 ﻿TEMPO
-Guide de démarrage · Windows 64 bits
+Version 1.0.2 · Guide de démarrage · Windows 10 et 11 · 64 bits
 
 J’ai créé Tempo pour les journées où tu te plonges dans le code et où
 tu oublies de lever le nez. Pose la petite console dans un coin de ton
@@ -10,6 +10,10 @@ DÉMARRER
 1. Dans Windows, fais un clic droit sur le ZIP et choisis « Extraire tout ».
 2. Double-clique sur « Installer Tempo.msi » dans le dossier extrait.
    Une fois l’installation terminée, ouvre « Tempo » sur ton bureau.
+   Tempo n’est pas signé numériquement. Windows peut afficher un avertissement
+   SmartScreen ou indiquer que l’éditeur est inconnu. Vérifie que le ZIP vient
+   bien de la Release GitHub officielle et compare son empreinte SHA-256 avant
+   de poursuivre l’installation.
 3. Dans « Réglages », choisis la durée totale, le nombre de pauses et leur
    durée. Par exemple, une heure avec deux pauses de cinq minutes te laisse
    cinquante minutes de travail. Reviens dans « Console » et clique sur
@@ -39,7 +43,8 @@ AU QUOTIDIEN
 
 Tes listes, tes séances et tes réglages sont conservés sur cet ordinateur,
 dans %LOCALAPPDATA%\TempoRadio. Pour passer à une nouvelle version, ferme
-l’ancienne application avant de lancer le nouvel installateur.
+l’ancienne application avant de lancer le nouvel installateur. L’installation
+1.0.2 remplace une version antérieure tout en conservant ce dossier de données.
 
 À PROPOS
 
@@ -57,6 +62,10 @@ Tempo est une ressource gratuite. Tu peux l’utiliser pour tes activités
 personnelles et professionnelles. La revente de l’application est interdite,
 seule ou incluse dans un lot, un abonnement ou une offre payante.
 Pour une diffusion commerciale, contacte-moi afin d’obtenir mon accord écrit.
+
+Le code source peut être consulté, compilé et modifié pour un usage personnel
+ou professionnel interne. La redistribution publique d’une version modifiée
+nécessite mon accord écrit. Tempo n’est pas distribué sous une licence open source.
 
 Tu peux partager gratuitement les thèmes que tu crées avec tes propres
 illustrations. Les marques et univers évoqués appartiennent à leurs
