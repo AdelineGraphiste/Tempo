@@ -23,6 +23,22 @@ Le dossier contient aussi **Désinstaller Tempo.exe** et le guide utilisateur. L
 
 Les réglages et l’historique sont enregistrés dans %LOCALAPPDATA%\TempoRadio. Les rappels fonctionnent lorsque Tempo reste ouvert. Les radios, YouTube et les calendriers distants utilisent Internet.
 
+## Exemples de thèmes
+
+Tempo contient plusieurs univers graphiques qui modifient les couleurs, les décors et la disposition de la console. Voici quelques exemples inclus dans cette version.
+
+![Galerie des thèmes disponibles dans Tempo](assets/screenshots/theme-gallery.png)
+
+| Circuits temporels | Monde inversé |
+| --- | --- |
+| ![Thème Circuits temporels](assets/screenshots/theme-circuits-temporels.png) | ![Thème inspiré du Monde inversé](assets/screenshots/theme-stranger-things.png) |
+
+| Nouveau-Mexique | Vice City |
+| --- | --- |
+| ![Thème inspiré du Nouveau-Mexique](assets/screenshots/theme-breaking-bad.png) | ![Thème inspiré de Vice City](assets/screenshots/theme-gta-vi.png) |
+
+Ces thèmes sont des exemples. D’autres thèmes seront proposés prochainement au téléchargement et pourront être importés directement dans Tempo au format `.tempo-theme`.
+
 ## Compiler
 
 Sur Windows 64 bits, avec PowerShell 5.1 ou ultérieur et .NET Framework 4.8, lance à la racine du projet
